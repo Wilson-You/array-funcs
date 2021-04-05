@@ -1,0 +1,58 @@
+html {
+    font-size: 10px;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    color: blue;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.concat1{
+    background-color: lightblue;
+    color:purple;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.concat2{
+    background-color: lightblue;
+    color:purple;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.every1{
+    background-color: black;
+    color: white;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.fill1{
+    background-color: green;
+    color: white;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
