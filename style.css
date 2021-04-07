@@ -85,3 +85,209 @@ h1 {
     margin: 1rem;
     padding: 1rem;
 }
+
+.flat1{
+    background-color: rgb(146, 146, 134);
+    color: black;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.flatmap1 {
+    background-color: rgb(42, 7, 168);
+    color: white;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.foreach1 {
+    background-color: rgb(194, 71, 128);
+    color: black;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.includes1 {
+    background-color: pink;
+    color: black;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.indexof1 {
+    background-color: rgb(204, 30, 59);
+    color: black;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.isarray1 {
+    background-color: rgb(46, 157, 177);
+    color: black;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.join1 {
+    background-color: rgb(77, 243, 113);
+    color: black;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.from1 {
+    background-color: rgb(18, 34, 21);
+    color: white;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.lastindexof1 {
+    background-color: rgb(161, 189, 166);
+    color: red;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.map1 {
+    background-color: rgb(70, 64, 151);
+    color: red;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.pop1 {
+    background-color: rgb(214, 216, 74);
+    color: red;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.push1 {
+    background-color: rgb(241, 245, 21);
+    color: red;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.reduce1 {
+    background-color: rgb(168, 102, 27);
+    color: white;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.reverse1 {
+    background-color: rgb(27, 168, 69);
+    color: white;
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.shift1 {
+    background-color: rgb(120, 240, 156);
+    color: rgb(2, 2, 2);
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.slice1 {
+    background-color: rgb(115, 17, 226);
+    color: rgb(253, 251, 251);
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.some1 {
+    background-color: red;
+    color: rgb(253, 251, 251);
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.sort1 {
+    background-color: rgb(161, 18, 142);
+    color: rgb(253, 251, 251);
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.splice1 {
+    background-color: rgb(55, 236, 18);
+    color: rgb(253, 251, 251);
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.tostring1 {
+    background-color: rgb(55, 236, 18);
+    color: rgb(114, 14, 14);
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.unshift1 {
+    background-color: rgb(203, 236, 18);
+    color: rgb(2, 0, 0);
+    border: 1px solid blue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
