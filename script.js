@@ -11,11 +11,20 @@ const toBeConcat3 = ['eins', 'zwei', 'drei']
 const pConcat2 = document.querySelector('.concat2')
 pConcat2.innerHTML = origin.concat(toBeConcat2, toBeConcat3)
 
-//function every; return true or false
-const arr1 = [4, 3, 5, 9, 11]
+//function every; returns true or false; it accepts one func as its required param and a thisArg obj as its optional param; the func param contains three params, the current item, its index, and the arr; only the current item is required; an empty array calling every func will always return true
+
+const arrForEvery = [4, 3, 5, 9, 11]
+const inRangeObj = { min: 0, max: 15 }
 const aboveEight = item => item > 10
+function inRange(item) {
+    return item > this.min && item < this.max
+}
 const pEvery = document.querySelector('.every1')
-pEvery.innerHTML = arr1.every(aboveEight);
+const aboveEightResult = arrForEvery.every(aboveEight)
+const inRangeResult = arrForEvery.every(inRange, inRangeObj)
+pEvery.innerHTML = 'Method every returns values for two situations, one with thisArg and another without thisArg:  ' + aboveEightResult + ', ' + inRangeResult;
+console.log([].every(item => item > 0))
+console.log([].every(item => item < 0))
 
 
 //function fill; return a modified array
@@ -137,11 +146,13 @@ const arr20 = ['a', 'ab', 'abc', 'abcd', 'ef']
 const pSlice = document.querySelector('.slice1')
 pSlice.innerHTML = arr20.slice(1, 3)
 
-//some; test whether at least one element in an array passes the provided function
+//some; test whether at least one element in an array passes the provided function; if the array is empty, the some always return false; refer to every
 const arr21 = [1, 2, 5, 8]
 const pSome = document.querySelector('.some1')
 const callback4 = item => item % 2 === 0
-pSome.innerHTML = arr21.some(callback4)
+pSome.innerHTML = 'Method some: returned ' + arr21.some(callback4)
+console.log([].some(item => item > 0))
+console.log([].some(item => item < 0))
 
 //sort; return an sorted array
 const arr22 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
