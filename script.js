@@ -27,11 +27,11 @@ console.log([].every(item => item > 0))
 console.log([].every(item => item < 0))
 
 
-//function fill; return a modified array
+//function fill; return a modified array; three parameters: (value, startIndex, endIndex)
 const arr2 = [1, 2, 3, 4, 5]
 const pFill = document.querySelector('.fill1')
 const filled = arr2.fill(11, 2)
-pFill.innerHTML = filled
+pFill.innerHTML = 'Method Fill fills the array with 11 starting from index 2 and returns a new array:' + filled
 
 //function filter; return an array with elements passed the callback func
 
@@ -47,7 +47,7 @@ const findItem = item => item.length >= 2
 const pFind = document.querySelector('.find1')
 pFind.innerHTML = arr4.find(findItem)
 
-//function findIndex; return the index of the first item, which meets the condition, from an array
+//function findIndex; return the index of the first satisfied item, or -1 if not found
 const arr5 = [1, 3, 5, 9, 11]
 const pFindIndex = document.querySelector('.findindex1')
 const fIndex = item => item === 10
@@ -85,10 +85,11 @@ const arr11 = [1, 2]
 const pIsArray = document.querySelector('.isarray1')
 pIsArray.innerHTML = Array.isArray(arr11)
 
-//join; convert an array into a string
+//join; convert an array into a string; the default seperator is ','; you can specify a seperator; returns an empty string if the array is empty
 const arr12 = ['a', 'pp', 'l', 'e']
 const pJoin = document.querySelector('.join1')
-pJoin.innerHTML = arr12.join('')
+pJoin.innerHTML = 'Method join returns: ' + arr12.join('-')
+console.log([].join(','));
 
 //from; convert a string into an array
 const str1 = 'apple'
@@ -120,7 +121,7 @@ const pPush = document.querySelector('.push1')
 pPush.innerHTML = arr16.push('drei', 'vier')
 console.log(arr16)
 
-//reduce; produce a single value with an input array
+//reduce; produces a single value with an input array; use this func to count how many repetions for each item in an arr
 const arr17 = [1, 2, 3, 4]
 const reducer = (accumulator, curValue) => {
     console.log('accu', accumulator);
@@ -128,7 +129,40 @@ const reducer = (accumulator, curValue) => {
     return accumulator + curValue
 }
 const pReduce = document.querySelector('.reduce1')
-pReduce.innerHTML = arr17.reduce(reducer)
+pReduce.innerHTML = 'Method reduce: returns ' + arr17.reduce(reducer)
+
+console.log([1, 2, 3, 4, 5].reduce((accumulator, currentVal, index, arr) => {
+    console.log(`accumulator is ${accumulator}; curretValue is ${currentVal}; index is ${index}; arr is ${arr}`);
+    return accumulator + currentVal
+}));
+const fruitBasket = ['banana', 'cherry', 'orange', 'apple', 'cherry', 'orange', 'apple', 'banana', 'cherry', 'orange', 'fig'];
+const count = (tally, fruit) => {
+    tally[fruit] = (tally[fruit] || 0) + 1
+    return tally
+}
+const result = fruitBasket.reduce(count, {})
+
+const result2 = fruitBasket.reduce((tally, fruit) => {
+    if (!tally[fruit]) {
+        tally[fruit] = 1
+    } else {
+        tally[fruit] = tally[fruit] + 1
+    }
+    return tally;
+}, {})
+
+const nestedArr = [['a', 'b'], [11, 14], ['qf', 'jy']]
+const result3 = nestedArr.reduce((initial, nestedItem) => {
+    return initial.concat(nestedItem)
+}, [])
+
+console.log(result)
+console.log(result2)
+console.log(result3)
+console.log(nestedArr.flat())
+
+
+
 
 //reverse; reverse an array
 const arr18 = ['a', 'b', 'c']
@@ -175,3 +209,12 @@ const arr25 = ['third', 'fourth']
 const pUnshift = document.querySelector('.unshift1')
 pUnshift.innerHTML = arr25.unshift('first', 'second')
 console.log(arr25);
+
+
+const data = ["Ali", "Billy", "Hali", "Dali", "Ali", "Billy", "Hali", "Dali", "Ali", "Billy", "Hali", "Dali", "Sily"]
+const finalre = data.reduce((acc, item) => {
+    acc[item] ? acc[item]++ : acc[item]=1
+    return acc
+}, {})
+
+console.log(finalre);
